@@ -5,32 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memento</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Pie.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">
-        <img src="imgs/Memento-logo.png" alt="Memento Logo" class="logo-icon" />
-        <span>MEMENTO</span>
-      </div>
-
-      <div class="navbar-right">
-        <nav class="nav-links">
-          <a href="#">Usos</a>
-          <a href="#">Recursos</a>
-          <a href="#">Precios</a>
-        </nav>
-
-        <div class="auth-buttons">
-          <a href="login" id="btn-inicia-sesion" class="login-btn">
-            Iniciar sesión
-          </a>
-          <a href="#" class="register-btn">Regístrate gratis</a>
+    <!-- SECCIÓN: NAVEGACIÓN -->
+    <section class="navbar-section">
+      <header class="navbar">
+        <div class="logo">
+          <img
+            src="imgs/Memento-logo.png"
+            alt="Memento Logo"
+            class="logo-icon"
+          />
+          <span>MEMENTO</span>
         </div>
-        <script src="index.js"></script>
-      </div>
-    </header>
 
-    <main class="hero-section">
+        <div class="navbar-right">
+          <nav class="nav-links">
+            <a href="#">Usos</a>
+            <a href="#">Recursos</a>
+            <a href="#">Precios</a>
+          </nav>
+
+          <div class="auth-buttons">
+            <a href="login" id="btn-inicia-sesion" class="login-btn">
+              Iniciar sesión
+            </a>
+            <a href="#" class="register-btn">Regístrate gratis</a>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <!-- SECCIÓN: HERO/PRINCIPAL -->
+    <section class="hero-section">
       <div class="hero-text-content">
         <h1 class="headline">
           <span class="color-part-one">Organiza facil,</span>
@@ -60,6 +68,102 @@
           />
         </div>
       </div>
-    </main>
+    </section>
+
+    <!-- SECCIÓN: CONTENIDO ADICIONAL -->
+    <section class="content-section">
+      <div class="content-container">
+        <h2 class="content-title">¿Por qué elegir Memento?</h2>
+        <p class="content-text">
+          Memento es la solución perfecta para organizar tu vida personal y
+          profesional. Con una interfaz intuitiva y características poderosas,
+          gestiona tus tareas, proyectos y rutinas diarias de manera sencilla y
+          eficiente.
+        </p>
+        <p class="content-text">
+          Desde profesionales hasta estudiantes, millones de usuarios confían en
+          Memento para simplificar su día a día. Sincroniza automáticamente
+          entre todos tus dispositivos, recibe recordatorios inteligentes y
+          mantén todo en un solo lugar.
+        </p>
+        <p class="content-text">
+          La productividad no tiene que ser complicada. Con Memento, alcanza tus
+          objetivos más rápido, colabora con tu equipo y vive una vida más
+          organizada. Empieza hoy mismo de forma gratuita, sin necesidad de
+          tarjeta de crédito.
+        </p>
+      </div>
+      <div class="content-video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/oFzXfi9IGWw?si=WI_RTtVNnyz-Zm0I"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: PIE DE PÁGINA -->
+    <section class="footer-section">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Footer Brand -->
+          <div class="footer-brand">
+            <img src="imgs/Memento-logo.png" alt="Logo" class="footer-logo" />
+            <p>MEMENTO</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Footer Legal Links -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="documentos/Politica de Privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <a href="documentos/Terminos y condiciones.pdf"
+              >Términos y Condiciones</a
+            >
+            <a href="documentos/Ley de proteccion de datos.pdf"
+              >Protección de Datos</a
+            >
+          </div>
+
+          <!-- Footer Social Media -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>

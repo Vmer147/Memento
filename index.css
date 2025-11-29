@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
-/* General Reset and Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +7,8 @@
 }
 
 body {
-  font-family: "Alegreya Sans", sans-serif; /* Using a common font similar to the image */
-  background-color: #f5e6de; /* Light beige background color */
+  font-family: "Alegreya Sans", sans-serif;
+  background-color: #f5e6de;
   color: #333;
 }
 
@@ -18,47 +18,50 @@ a {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
-  justify-content: space-between; /* Esto empuja el logo y los botones a los extremos */
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
+  padding: 1.25rem 5rem;
   background-color: #f5cab3;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-  /* Asegúrate de que no haya un ancho máximo que restrinja el estiramiento */
+  box-shadow: 0 0.0625rem 0.3125rem rgba(0, 0, 0, 0.05);
   width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar-right {
   display: flex;
-  align-items: center; /* Para asegurar que todo esté verticalmente centrado */
-  gap: 30px; /* Espacio entre los enlaces de navegación y los botones de autenticación */
+  align-items: center;
+  gap: 1.875rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.5625rem;
   font-weight: 700;
   color: #444;
 }
 
 .logo-icon {
-  /* Assuming a small icon exists, you might need to style this */
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.21875rem;
 }
 
 .nav-links a {
-  margin: 0 10px;
-  font-size: 20px;
+  margin: 0 0.625rem;
+  font-size: 1.25rem;
   color: #666;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #ff7f50; /* A hover color */
+  color: #ff7f50;
 }
 
 .auth-buttons {
@@ -67,28 +70,29 @@ a {
 }
 
 .login-btn:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.4);
   color: #ff7f50;
 }
+
 .login-btn {
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 20px;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  font-size: 1.25rem;
   color: #666;
   font-weight: 600;
-  margin-right: 15px;
+  margin-right: 0.9375rem;
   transition: box-shadow 0.3s ease, color 0.3s;
 }
 
 .register-btn {
-  background-color: #ff6f4e; /* Orange color from the image */
+  background-color: #ff6f4e;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
   font-weight: 600;
   transition: background-color 0.3s;
   transition: color 0.3s;
-  font-size: 17.5px;
+  font-size: 1.09375rem;
 }
 
 .register-btn:hover {
@@ -101,22 +105,23 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 80px;
-  min-height: 80vh; /* Ensures the section takes up most of the viewport height */
+  padding: 5rem 5rem;
+  padding-top: 8rem;
+  min-height: 80vh;
 }
 
 .hero-text-content {
   flex: 1;
   max-width: 50%;
-  padding-right: 50px;
+  padding-right: 3.125rem;
 }
 
 .headline {
-  font-size: 99px; /* Responsive font size */
+  font-size: 6.1875rem;
   line-height: 1.1;
   font-weight: 700;
-  margin-bottom: 20px;
-  max-width: 800px;
+  margin-bottom: 1.25rem;
+  max-width: 50rem;
 }
 
 .headline .color-part-one {
@@ -129,21 +134,21 @@ a {
 }
 
 .subtitle {
-  font-size: 29px;
+  font-size: 1.8125rem;
   line-height: 1.6;
   color: #555;
-  margin-bottom: 40px;
-  max-width: 800px;
+  margin-bottom: 2.5rem;
+  max-width: 50rem;
 }
 
 .cta-buttons {
   display: flex;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 
 .cta-button {
-  padding: 15px 30px;
-  border-radius: 8px;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 0.5rem;
   font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
@@ -152,26 +157,26 @@ a {
 
 .cta-button:hover {
   opacity: 0.9;
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
 
 .start-free {
-  background-color: #e79983; /* Lighter, muted orange */
+  background-color: #e79983;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(231, 153, 131, 0.5);
+  box-shadow: 0 0.25rem 0.625rem rgba(231, 153, 131, 0.5);
 }
 
 .download {
-  background-color: #5d8ab5; /* Blue color */
+  background-color: #5d8ab5;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(93, 138, 181, 0.5);
+  box-shadow: 0 0.25rem 0.625rem rgba(93, 138, 181, 0.5);
 }
 
 /* --- App Screenshots Section --- */
 .hero-image-content {
   flex: 1;
   max-width: 50%;
-  position: relative;
+  position: static;
   display: flex;
   justify-content: center;
 }
@@ -179,43 +184,95 @@ a {
 .app-screenshot-container {
   position: relative;
   width: 100%;
-  max-width: 650px; /* Adjust as needed */
-  /* This positioning and sizing is an approximation */
+  max-width: 40.625rem;
 }
 
 .desktop-screenshot {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border-radius: 0.625rem;
+  box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.15);
 }
 
 .mobile-screenshot {
   position: absolute;
   right: 0;
-  bottom: -80px; /* Position it below and to the right of the desktop screenshot */
-  width: 200px; /* Adjust size */
+  bottom: -5rem;
+  width: 12.5rem;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  z-index: 2; /* Bring it slightly forward */
+  border-radius: 0.625rem;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 
-/* --- Basic Responsiveness (for smaller screens) --- */
-@media (max-width: 1024px) {
+/* --- SECCIÓN DE CONTENIDO ADICIONAL --- */
+.content-section {
+  background-color: #fff;
+  padding: 6.25rem 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  min-height: 60vh;
+}
+
+.content-container {
+  flex: 0 0 40%;
+  max-width: 40rem;
+  text-align: left;
+  order: 1;
+}
+
+.content-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff6f4e;
+  margin-bottom: 2.5rem;
+  line-height: 1.3;
+}
+
+.content-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5625rem;
+  text-align: justify;
+}
+
+.content-text:last-child {
+  margin-bottom: 0;
+}
+
+.content-video {
+  flex: auto;
+  max-width: 45rem;
+  order: 2;
+}
+
+.content-video iframe {
+  width: 100%;
+  height: 30rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.1);
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 64rem) {
   .navbar {
-    padding: 15px 30px;
+    padding: 0.9375rem 1.875rem;
   }
+
   .hero-section {
     flex-direction: column;
-    padding: 50px 30px;
+    padding: 3.125rem 1.875rem;
+    padding-top: 8rem;
     text-align: center;
   }
 
   .hero-text-content {
     max-width: 100%;
     padding-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 
   .headline {
@@ -224,7 +281,7 @@ a {
 
   .subtitle {
     max-width: none;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 1.875rem auto;
   }
 
   .cta-buttons {
@@ -236,29 +293,83 @@ a {
   }
 
   .mobile-screenshot {
-    bottom: -40px;
-    width: 150px;
+    bottom: -2.5rem;
+    width: 9.375rem;
+  }
+
+  .content-section {
+    padding: 3.75rem 2.5rem;
+    min-height: 50vh;
+  }
+
+  .content-title {
+    font-size: 2.25rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .content-text {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .navbar {
-    /* Simplification for mobile nav */
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
   }
+
   .nav-links {
-    display: none; /* Hide for very small screens or make it a hamburger menu */
+    display: none;
   }
+
   .auth-buttons {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
+
+  .hero-section {
+    padding: 2.5rem 1.25rem;
+    padding-top: 8rem;
+  }
+
   .headline {
     font-size: 10vw;
   }
+
   .cta-buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
+  }
+
+  .content-section {
+    flex-direction: column;
+    padding: 2.5rem 1.25rem;
+    gap: 2.5rem;
+    min-height: 40vh;
+  }
+
+  .content-container {
+    max-width: 100%;
+    flex: 1;
+  }
+
+  .content-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-text {
+    font-size: 0.875rem;
+    text-align: left;
+    margin-bottom: 0.9375rem;
+  }
+
+  .content-video {
+    max-width: 100%;
+  }
+
+  .content-video iframe {
+    height: 18.75rem;
   }
 }
