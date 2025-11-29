@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo"></div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-item active">Hoy <span>5</span></div>
+        <div class="sidebar-item">Próximos 7 días <span>13</span></div>
+        <div class="sidebar-item">Bandeja de entrada <span>5</span></div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Listas</h2>
+        <div class="sidebar-item">Trabajo <span>5</span></div>
+        <div class="sidebar-item">Planes de Viaje <span>14</span></div>
+        <div class="sidebar-item">Estudios <span>20</span></div>
+        <div class="sidebar-item">Tareas diarias <span>10</span></div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Filtros</h2>
+        <div class="sidebar-item">Esta semana <span>32</span></div>
+      </div>
+
+      <div class="sidebar-icons">
+        <button class="icon-btn">☁️</button>
+        <button class="icon-btn">🔔</button>
+        <button class="icon-btn">❓</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="tasks-panel">
+        <div class="panel-header">
+          <h3>Próximos 7 días</h3>
+          <button class="add-task">+ Añadir Tarea</button>
+        </div>
+
+        <div class="section-title">Hoy</div>
+        <div class="task-item">
+          <input type="checkbox" />
+          <div class="task-content">
+            <span class="task-text">Comprar pan</span>
+            <span class="task-time">06:00</span>
+          </div>
+        </div>
+
+        <div class="task-item">
+          <input type="checkbox" />
+          <div class="task-content">
+            <span class="task-text">Revisar correo</span>
+            <span class="task-time">07:00</span>
+          </div>
+        </div>
+
+        <div class="task-item" style="background: #e3f2fd">
+          <input type="checkbox" checked />
+          <div class="task-content">
+            <span class="task-text">Terminar presentación</span>
+            <span class="task-time">10:00</span>
+          </div>
+        </div>
+
+        <div class="task-item">
+          <input type="checkbox" />
+          <div class="task-content">
+            <span class="task-text">Leer libro</span>
+            <span class="task-time">16:00</span>
+          </div>
+        </div>
+
+        <div class="task-item">
+          <input type="checkbox" />
+          <div class="task-content">
+            <span class="task-text">Reunión</span>
+            <span class="task-time">20:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-panel">
+        <div class="details-header">
+          <h2>Terminar presentación</h2>
+          <button
+            style="
+              background: none;
+              border: none;
+              font-size: 20px;
+              cursor: pointer;
+            "
+          >
+            ⋮
+          </button>
+        </div>
+        <div class="details-date">Hoy, 2 Sep, 10:00-13:00</div>
+
+        <div class="section-title">Tareas</div>
+        <div class="detail-item">
+          <input type="checkbox" />
+          <div class="detail-content">
+            <span class="detail-text">Añadir imágenes al canva</span>
+          </div>
+        </div>
+
+        <div class="detail-item">
+          <input type="checkbox" />
+          <div class="detail-content">
+            <span class="detail-text">Revisar fallas ortográficas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

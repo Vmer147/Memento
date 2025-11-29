@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 /* General Reset and Base Styles */
 * {
   margin: 0;
@@ -6,8 +7,8 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif; /* Using a common font similar to the image */
-  background-color: #f7f5f2; /* Light beige background color */
+  font-family: "Alegreya Sans", sans-serif; /* Using a common font similar to the image */
+  background-color: #f5e6de; /* Light beige background color */
   color: #333;
 }
 
@@ -16,14 +17,21 @@ a {
   color: inherit;
 }
 
-/* --- Header / Navigation Bar --- */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Esto empuja el logo y los botones a los extremos */
   align-items: center;
   padding: 20px 80px;
-  background-color: #fff; /* White background for the header */
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  background-color: #f5cab3;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  /* Asegúrate de que no haya un ancho máximo que restrinja el estiramiento */
+  width: 100%;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center; /* Para asegurar que todo esté verticalmente centrado */
+  gap: 30px; /* Espacio entre los enlaces de navegación y los botones de autenticación */
 }
 
 .logo {
@@ -42,8 +50,8 @@ a {
 }
 
 .nav-links a {
-  margin: 0 15px;
-  font-size: 16px;
+  margin: 0 10px;
+  font-size: 20px;
   color: #666;
   font-weight: 500;
   transition: color 0.3s;
@@ -59,14 +67,17 @@ a {
 }
 
 .login-btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   color: #ff7f50;
 }
 .login-btn {
-  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
   color: #666;
-  font-weight: 500;
-  margin-right: 20px;
-  transition: color 0.3s;
+  font-weight: 600;
+  margin-right: 15px;
+  transition: box-shadow 0.3s ease, color 0.3s;
 }
 
 .register-btn {
@@ -76,10 +87,13 @@ a {
   border-radius: 5px;
   font-weight: 600;
   transition: background-color 0.3s;
+  transition: color 0.3s;
+  font-size: 17.5px;
 }
 
 .register-btn:hover {
   background-color: #e55c3c;
+  color: black;
 }
 
 /* --- Main Hero Section --- */
@@ -98,10 +112,11 @@ a {
 }
 
 .headline {
-  font-size: 4.5vw; /* Responsive font size */
+  font-size: 99px; /* Responsive font size */
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 20px;
+  max-width: 800px;
 }
 
 .headline .color-part-one {
@@ -114,11 +129,11 @@ a {
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 29px;
   line-height: 1.6;
   color: #555;
   margin-bottom: 40px;
-  max-width: 450px;
+  max-width: 800px;
 }
 
 .cta-buttons {

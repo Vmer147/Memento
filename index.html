@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memento</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header class="navbar">
@@ -16,14 +12,21 @@
         <img src="imgs/Memento-logo.png" alt="Memento Logo" class="logo-icon" />
         <span>MEMENTO</span>
       </div>
-      <nav class="nav-links">
-        <a href="#">Usos</a>
-        <a href="#">Recursos</a>
-        <a href="#">Precios</a>
-      </nav>
-      <div class="auth-buttons">
-        <a href="#" class="login-btn">Iniciar sesión</a>
-        <a href="#" class="register-btn">Regístrate gratis</a>
+
+      <div class="navbar-right">
+        <nav class="nav-links">
+          <a href="#">Usos</a>
+          <a href="#">Recursos</a>
+          <a href="#">Precios</a>
+        </nav>
+
+        <div class="auth-buttons">
+          <a href="login" id="btn-inicia-sesion" class="login-btn">
+            Iniciar sesión
+          </a>
+          <a href="#" class="register-btn">Regístrate gratis</a>
+        </div>
+        <script src="index.js"></script>
       </div>
     </header>
 
