@@ -104,11 +104,11 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 1rem;
+  padding-top: 0.5rem;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.3s ease, visibility 0.3s ease, margin-top 0.3s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
   z-index: 1000;
 }
 
