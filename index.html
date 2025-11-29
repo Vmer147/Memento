@@ -6,6 +6,7 @@
     <title>Memento</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
   </head>
   <body>
     <!-- SECCIÓN: NAVEGACIÓN -->
@@ -20,11 +21,83 @@
           <span>MEMENTO</span>
         </div>
 
-        <div class="navbar-right">
+        <!-- Botón Hamburguesa (NUEVO) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navbar-right" id="navbarRight">
           <nav class="nav-links">
             <a href="#">Usos</a>
             <a href="#">Recursos</a>
-            <a href="#">Precios</a>
+
+            <!-- Menú desplegable de Precios -->
+            <div class="nav-item-dropdown">
+              <a href="#" class="dropdown-trigger">
+                Precios
+                <svg
+                  class="dropdown-arrow"
+                  width="12"
+                  height="8"
+                  viewBox="0 0 12 8"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L6 6L11 1"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+
+              <!-- Menú desplegable -->
+              <div class="dropdown-menu">
+                <div class="dropdown-content">
+                  <h4 class="dropdown-title">Planes de Pago</h4>
+
+                  <a href="#" class="dropdown-item">
+                    <div class="dropdown-item-icon">💎</div>
+                    <div class="dropdown-item-text">
+                      <strong>Plan Gratuito</strong>
+                      <span>Perfecto para empezar</span>
+                    </div>
+                  </a>
+
+                  <a href="#" class="dropdown-item">
+                    <div class="dropdown-item-icon">⭐</div>
+                    <div class="dropdown-item-text">
+                      <strong>Plan Personal</strong>
+                      <span>$5.99/mes • Todas las funciones</span>
+                    </div>
+                  </a>
+
+                  <a href="#" class="dropdown-item">
+                    <div class="dropdown-item-icon">👥</div>
+                    <div class="dropdown-item-text">
+                      <strong>Plan Familiar</strong>
+                      <span>$9.99/mes • Hasta 6 usuarios</span>
+                    </div>
+                  </a>
+
+                  <a href="#" class="dropdown-item">
+                    <div class="dropdown-item-icon">🏢</div>
+                    <div class="dropdown-item-text">
+                      <strong>Plan Empresarial</strong>
+                      <span>Contactar ventas</span>
+                    </div>
+                  </a>
+
+                  <div class="dropdown-footer">
+                    <a href="#" class="dropdown-footer-link"
+                      >Ver comparación completa →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </nav>
 
           <div class="auth-buttons">
@@ -36,6 +109,9 @@
         </div>
       </header>
     </section>
+
+    <!-- Overlay para cerrar menú (NUEVO - agregar antes del cierre de body) -->
+    <div class="menu-overlay" id="menuOverlay"></div>
 
     <!-- SECCIÓN: HERO/PRINCIPAL -->
     <section class="hero-section">
@@ -107,6 +183,90 @@
       </div>
     </section>
 
+    <!--Seccion Contactanos-->
+    <section class="contact-section" id="contactanos">
+      <div class="contact-container">
+        <h2 class="contact-title">Formulario de ayuda</h2>
+        <p class="contact-subtitle">Complete todos los campos</p>
+        <form class="contact-form">
+          <!--INPUT:TEXT-->
+          <div class="form-field">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres:"
+            />
+          </div>
+
+          <!--LISTA DESPEGABLE-->
+          <div class="form-field">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un País</option>
+              <option value="peru">Perú</option>
+              <option value="argentina">Argentina</option>
+              <option value="colombia">Colombia</option>
+              <option value="mexico">México</option>
+            </select>
+          </div>
+
+          <!--CHECKBOX-->
+          <div class="form-field">
+            <label>Intereses:</label>
+            <ul class="checkbox-list">
+              <li>
+                <label>
+                  <input type="checkbox" name="intereses" value="ingles" />
+                  Inglés
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="intereses" value="espanol" />
+                  Español
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="intereses" value="frances" />
+                  Francés
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="intereses" value="portugues" />
+                  Portugués
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!--RADIO-->
+          <div class="form-field">
+            <label>Sexo:</label>
+            <ul class="radio-list">
+              <li>
+                <label>
+                  <input type="radio" name="sexo" value="m" />
+                  Masculino
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="sexo" value="f" />
+                  Femenino
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+
     <!-- SECCIÓN: PIE DE PÁGINA -->
     <section class="footer-section">
       <footer class="footer">
@@ -163,7 +323,7 @@
         </div>
       </footer>
     </section>
-
     <script src="index.js"></script>
+    <script src="menu_toggle.js"></script>
   </body>
 </html>
